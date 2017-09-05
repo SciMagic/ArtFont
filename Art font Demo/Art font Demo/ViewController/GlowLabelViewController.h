@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface GlowLabelViewController : UIViewController
+@interface GlowLabelViewController : BaseViewController
 
 @end

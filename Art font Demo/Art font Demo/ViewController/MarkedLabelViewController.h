@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface MarkedLabelViewController : UIViewController
+@interface MarkedLabelViewController : BaseViewController
 
 @end

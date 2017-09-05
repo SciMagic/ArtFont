@@ -40,8 +40,20 @@
 
 - (void)commonInit
 {
-    self.outlineColor = [UIColor whiteColor];
-    self.outlineWidth = 0.f;
+    _outlineColor = [UIColor whiteColor];
+    _outlineWidth = 0.f;
+}
+
+- (void)setOutlineColor:(UIColor *)outlineColor
+{
+    _outlineColor = outlineColor;
+    [self setNeedsDisplay];
+}
+
+- (void)setOutlineWidth:(CGFloat)outlineWidth
+{
+    _outlineWidth = outlineWidth;
+    [self setNeedsDisplay];
 }
 
 - (void)drawTextInRect:(CGRect)rect

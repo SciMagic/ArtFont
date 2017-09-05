@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface GradientLabelViewController : UIViewController
+@interface GradientLabelViewController : BaseViewController
 
 @end

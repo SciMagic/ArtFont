@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface StrokeLabelViewController : UIViewController
+@interface StrokeLabelViewController : BaseViewController
 
 @end

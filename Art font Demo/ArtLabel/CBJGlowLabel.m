@@ -39,12 +39,25 @@
 - (void)commonInit
 {
     self.textColor = [UIColor whiteColor];
-    self.glowColor = [UIColor redColor];
-    self.glowSize = 10.f;
+    _glowColor = [UIColor redColor];
+    _glowSize = 10.f;
+}
+
+- (void)setGlowSize:(CGFloat)glowSize
+{
+    _glowSize = glowSize;
+    [self setNeedsDisplay];
+}
+
+- (void)setGlowColor:(UIColor *)glowColor
+{
+    _glowColor = glowColor;
+    [self setNeedsDisplay];
 }
 
 - (void)drawTextInRect:(CGRect)rect
 {
+    
     
     CGContextRef context = UIGraphicsGetCurrentContext();
     
@@ -59,8 +72,6 @@
     CGContextSetLineJoin(context, kCGLineJoinRound);
     
     CGContextSetTextDrawingMode(context, kCGTextStroke);
-    
-    self.textColor = self.glowColor;
     
     [super drawTextInRect:rect];
     

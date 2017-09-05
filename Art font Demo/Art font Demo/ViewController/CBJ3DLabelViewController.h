@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface CBJ3DLabelViewController : UIViewController
+@interface CBJ3DLabelViewController : BaseViewController
 
 @end

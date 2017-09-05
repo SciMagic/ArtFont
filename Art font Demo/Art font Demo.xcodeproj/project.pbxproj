@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA59DD521F5A517900EC1A86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59DD511F5A517900EC1A86 /* main.m */; };
+		FA59DD551F5A517900EC1A86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59DD541F5A517900EC1A86 /* AppDelegate.m */; };
+		FA59DD581F5A517900EC1A86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59DD571F5A517900EC1A86 /* ViewController.m */; };
+		FA59DD5B1F5A517900EC1A86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA59DD591F5A517900EC1A86 /* Main.storyboard */; };
+		FA59DD5D1F5A517900EC1A86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA59DD5C1F5A517900EC1A86 /* Assets.xcassets */; };
+		FA59DD601F5A517900EC1A86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA59DD5E1F5A517900EC1A86 /* LaunchScreen.storyboard */; };
+		FA59DD691F5A6CE000EC1A86 /* CBJStrokeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59DD681F5A6CE000EC1A86 /* CBJStrokeLabel.m */; };
+		FA59DD6D1F5A6EFB00EC1A86 /* StrokeLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59DD6C1F5A6EFB00EC1A86 /* StrokeLabelViewController.m */; };
+		FA59DD711F5A754600EC1A86 /* CBJGlowLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59DD701F5A754600EC1A86 /* CBJGlowLabel.m */; };
+		FA59DD741F5A75C400EC1A86 /* CBJGradientLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59DD731F5A75C400EC1A86 /* CBJGradientLabel.m */; };
+		FA59DD771F5A75EC00EC1A86 /* CBJHollowLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59DD761F5A75EC00EC1A86 /* CBJHollowLabel.m */; };
+		FA59DD7A1F5A762B00EC1A86 /* CBJ3DLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59DD791F5A762B00EC1A86 /* CBJ3DLabel.m */; };
+		FA59DD7D1F5A76CF00EC1A86 /* CBJMarkedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59DD7C1F5A76CF00EC1A86 /* CBJMarkedLabel.m */; };
+		FA59DD801F5A76F000EC1A86 /* GlowLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59DD7F1F5A76F000EC1A86 /* GlowLabelViewController.m */; };
+		FA59DD831F5A770800EC1A86 /* GradientLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59DD821F5A770800EC1A86 /* GradientLabelViewController.m */; };
+		FA59DD861F5A771600EC1A86 /* HollowLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59DD851F5A771600EC1A86 /* HollowLabelViewController.m */; };
+		FA59DD891F5A774D00EC1A86 /* CBJ3DLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59DD881F5A774D00EC1A86 /* CBJ3DLabelViewController.m */; };
+		FA59DD8C1F5A776400EC1A86 /* MarkedLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59DD8B1F5A776400EC1A86 /* MarkedLabelViewController.m */; };
+		FA59DD921F5A79D000EC1A86 /* UIImage+TintColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59DD911F5A79D000EC1A86 /* UIImage+TintColor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA59DD4D1F5A517900EC1A86 /* Art font Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Art font Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA59DD511F5A517900EC1A86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA59DD531F5A517900EC1A86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA59DD541F5A517900EC1A86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA59DD561F5A517900EC1A86 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FA59DD571F5A517900EC1A86 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FA59DD5A1F5A517900EC1A86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA59DD5C1F5A517900EC1A86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA59DD5F1F5A517900EC1A86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA59DD611F5A517900EC1A86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA59DD671F5A6CE000EC1A86 /* CBJStrokeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBJStrokeLabel.h; path = ArtLabel/CBJStrokeLabel.h; sourceTree = "<group>"; };
+		FA59DD681F5A6CE000EC1A86 /* CBJStrokeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBJStrokeLabel.m; path = ArtLabel/CBJStrokeLabel.m; sourceTree = "<group>"; };
+		FA59DD6B1F5A6EFB00EC1A86 /* StrokeLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StrokeLabelViewController.h; path = "Art font Demo/ViewController/StrokeLabelViewController.h"; sourceTree = "<group>"; };
+		FA59DD6C1F5A6EFB00EC1A86 /* StrokeLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StrokeLabelViewController.m; path = "Art font Demo/ViewController/StrokeLabelViewController.m"; sourceTree = "<group>"; };
+		FA59DD6F1F5A754600EC1A86 /* CBJGlowLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBJGlowLabel.h; path = ArtLabel/CBJGlowLabel.h; sourceTree = "<group>"; };
+		FA59DD701F5A754600EC1A86 /* CBJGlowLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBJGlowLabel.m; path = ArtLabel/CBJGlowLabel.m; sourceTree = "<group>"; };
+		FA59DD721F5A75C400EC1A86 /* CBJGradientLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBJGradientLabel.h; path = ArtLabel/CBJGradientLabel.h; sourceTree = "<group>"; };
+		FA59DD731F5A75C400EC1A86 /* CBJGradientLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBJGradientLabel.m; path = ArtLabel/CBJGradientLabel.m; sourceTree = "<group>"; };
+		FA59DD751F5A75EC00EC1A86 /* CBJHollowLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBJHollowLabel.h; path = ArtLabel/CBJHollowLabel.h; sourceTree = "<group>"; };
+		FA59DD761F5A75EC00EC1A86 /* CBJHollowLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBJHollowLabel.m; path = ArtLabel/CBJHollowLabel.m; sourceTree = "<group>"; };
+		FA59DD781F5A762B00EC1A86 /* CBJ3DLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBJ3DLabel.h; path = ArtLabel/CBJ3DLabel.h; sourceTree = "<group>"; };
+		FA59DD791F5A762B00EC1A86 /* CBJ3DLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBJ3DLabel.m; path = ArtLabel/CBJ3DLabel.m; sourceTree = "<group>"; };
+		FA59DD7B1F5A76CF00EC1A86 /* CBJMarkedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBJMarkedLabel.h; path = ArtLabel/CBJMarkedLabel.h; sourceTree = "<group>"; };
+		FA59DD7C1F5A76CF00EC1A86 /* CBJMarkedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBJMarkedLabel.m; path = ArtLabel/CBJMarkedLabel.m; sourceTree = "<group>"; };
+		FA59DD7E1F5A76F000EC1A86 /* GlowLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlowLabelViewController.h; path = "Art font Demo/ViewController/GlowLabelViewController.h"; sourceTree = "<group>"; };
+		FA59DD7F1F5A76F000EC1A86 /* GlowLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlowLabelViewController.m; path = "Art font Demo/ViewController/GlowLabelViewController.m"; sourceTree = "<group>"; };
+		FA59DD811F5A770800EC1A86 /* GradientLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradientLabelViewController.h; path = "Art font Demo/ViewController/GradientLabelViewController.h"; sourceTree = "<group>"; };
+		FA59DD821F5A770800EC1A86 /* GradientLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradientLabelViewController.m; path = "Art font Demo/ViewController/GradientLabelViewController.m"; sourceTree = "<group>"; };
+		FA59DD841F5A771600EC1A86 /* HollowLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HollowLabelViewController.h; path = "Art font Demo/ViewController/HollowLabelViewController.h"; sourceTree = "<group>"; };
+		FA59DD851F5A771600EC1A86 /* HollowLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HollowLabelViewController.m; path = "Art font Demo/ViewController/HollowLabelViewController.m"; sourceTree = "<group>"; };
+		FA59DD871F5A774D00EC1A86 /* CBJ3DLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBJ3DLabelViewController.h; path = "Art font Demo/ViewController/CBJ3DLabelViewController.h"; sourceTree = "<group>"; };
+		FA59DD881F5A774D00EC1A86 /* CBJ3DLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBJ3DLabelViewController.m; path = "Art font Demo/ViewController/CBJ3DLabelViewController.m"; sourceTree = "<group>"; };
+		FA59DD8A1F5A776400EC1A86 /* MarkedLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MarkedLabelViewController.h; path = "Art font Demo/ViewController/MarkedLabelViewController.h"; sourceTree = "<group>"; };
+		FA59DD8B1F5A776400EC1A86 /* MarkedLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MarkedLabelViewController.m; path = "Art font Demo/ViewController/MarkedLabelViewController.m"; sourceTree = "<group>"; };
+		FA59DD901F5A79D000EC1A86 /* UIImage+TintColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+TintColor.h"; path = "ArtLabel/UIImage+TintColor.h"; sourceTree = "<group>"; };
+		FA59DD911F5A79D000EC1A86 /* UIImage+TintColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+TintColor.m"; path = "ArtLabel/UIImage+TintColor.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA59DD4A1F5A517900EC1A86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA59DD441F5A517900EC1A86 = {
+			isa = PBXGroup;
+			children = (
+				FA59DD6E1F5A6F0100EC1A86 /* ViewController */,
+				FA59DD6A1F5A6CE300EC1A86 /* ArtLabel */,
+				FA59DD4F1F5A517900EC1A86 /* Art font Demo */,
+				FA59DD4E1F5A517900EC1A86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA59DD4E1F5A517900EC1A86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DD4D1F5A517900EC1A86 /* Art font Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA59DD4F1F5A517900EC1A86 /* Art font Demo */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DD531F5A517900EC1A86 /* AppDelegate.h */,
+				FA59DD541F5A517900EC1A86 /* AppDelegate.m */,
+				FA59DD561F5A517900EC1A86 /* ViewController.h */,
+				FA59DD571F5A517900EC1A86 /* ViewController.m */,
+				FA59DD591F5A517900EC1A86 /* Main.storyboard */,
+				FA59DD5C1F5A517900EC1A86 /* Assets.xcassets */,
+				FA59DD5E1F5A517900EC1A86 /* LaunchScreen.storyboard */,
+				FA59DD611F5A517900EC1A86 /* Info.plist */,
+				FA59DD501F5A517900EC1A86 /* Supporting Files */,
+			);
+			path = "Art font Demo";
+			sourceTree = "<group>";
+		};
+		FA59DD501F5A517900EC1A86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DD511F5A517900EC1A86 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA59DD6A1F5A6CE300EC1A86 /* ArtLabel */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DD901F5A79D000EC1A86 /* UIImage+TintColor.h */,
+				FA59DD911F5A79D000EC1A86 /* UIImage+TintColor.m */,
+				FA59DD671F5A6CE000EC1A86 /* CBJStrokeLabel.h */,
+				FA59DD681F5A6CE000EC1A86 /* CBJStrokeLabel.m */,
+				FA59DD6F1F5A754600EC1A86 /* CBJGlowLabel.h */,
+				FA59DD701F5A754600EC1A86 /* CBJGlowLabel.m */,
+				FA59DD721F5A75C400EC1A86 /* CBJGradientLabel.h */,
+				FA59DD731F5A75C400EC1A86 /* CBJGradientLabel.m */,
+				FA59DD751F5A75EC00EC1A86 /* CBJHollowLabel.h */,
+				FA59DD761F5A75EC00EC1A86 /* CBJHollowLabel.m */,
+				FA59DD781F5A762B00EC1A86 /* CBJ3DLabel.h */,
+				FA59DD791F5A762B00EC1A86 /* CBJ3DLabel.m */,
+				FA59DD7B1F5A76CF00EC1A86 /* CBJMarkedLabel.h */,
+				FA59DD7C1F5A76CF00EC1A86 /* CBJMarkedLabel.m */,
+			);
+			name = ArtLabel;
+			sourceTree = "<group>";
+		};
+		FA59DD6E1F5A6F0100EC1A86 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DD6B1F5A6EFB00EC1A86 /* StrokeLabelViewController.h */,
+				FA59DD6C1F5A6EFB00EC1A86 /* StrokeLabelViewController.m */,
+				FA59DD7E1F5A76F000EC1A86 /* GlowLabelViewController.h */,
+				FA59DD7F1F5A76F000EC1A86 /* GlowLabelViewController.m */,
+				FA59DD811F5A770800EC1A86 /* GradientLabelViewController.h */,
+				FA59DD821F5A770800EC1A86 /* GradientLabelViewController.m */,
+				FA59DD841F5A771600EC1A86 /* HollowLabelViewController.h */,
+				FA59DD851F5A771600EC1A86 /* HollowLabelViewController.m */,
+				FA59DD871F5A774D00EC1A86 /* CBJ3DLabelViewController.h */,
+				FA59DD881F5A774D00EC1A86 /* CBJ3DLabelViewController.m */,
+				FA59DD8A1F5A776400EC1A86 /* MarkedLabelViewController.h */,
+				FA59DD8B1F5A776400EC1A86 /* MarkedLabelViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA59DD4C1F5A517900EC1A86 /* Art font Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA59DD641F5A517900EC1A86 /* Build configuration list for PBXNativeTarget "Art font Demo" */;
+			buildPhases = (
+				FA59DD491F5A517900EC1A86 /* Sources */,
+				FA59DD4A1F5A517900EC1A86 /* Frameworks */,
+				FA59DD4B1F5A517900EC1A86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Art font Demo";
+			productName = "Art font Demo";
+			productReference = FA59DD4D1F5A517900EC1A86 /* Art font Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA59DD451F5A517900EC1A86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Hacky;
+				TargetAttributes = {
+					FA59DD4C1F5A517900EC1A86 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 484X4RMS42;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FA59DD481F5A517900EC1A86 /* Build configuration list for PBXProject "Art font Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA59DD441F5A517900EC1A86;
+			productRefGroup = FA59DD4E1F5A517900EC1A86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA59DD4C1F5A517900EC1A86 /* Art font Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA59DD4B1F5A517900EC1A86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA59DD601F5A517900EC1A86 /* LaunchScreen.storyboard in Resources */,
+				FA59DD5D1F5A517900EC1A86 /* Assets.xcassets in Resources */,
+				FA59DD5B1F5A517900EC1A86 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA59DD491F5A517900EC1A86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA59DD8C1F5A776400EC1A86 /* MarkedLabelViewController.m in Sources */,
+				FA59DD861F5A771600EC1A86 /* HollowLabelViewController.m in Sources */,
+				FA59DD581F5A517900EC1A86 /* ViewController.m in Sources */,
+				FA59DD891F5A774D00EC1A86 /* CBJ3DLabelViewController.m in Sources */,
+				FA59DD551F5A517900EC1A86 /* AppDelegate.m in Sources */,
+				FA59DD6D1F5A6EFB00EC1A86 /* StrokeLabelViewController.m in Sources */,
+				FA59DD801F5A76F000EC1A86 /* GlowLabelViewController.m in Sources */,
+				FA59DD691F5A6CE000EC1A86 /* CBJStrokeLabel.m in Sources */,
+				FA59DD921F5A79D000EC1A86 /* UIImage+TintColor.m in Sources */,
+				FA59DD831F5A770800EC1A86 /* GradientLabelViewController.m in Sources */,
+				FA59DD7D1F5A76CF00EC1A86 /* CBJMarkedLabel.m in Sources */,
+				FA59DD521F5A517900EC1A86 /* main.m in Sources */,
+				FA59DD711F5A754600EC1A86 /* CBJGlowLabel.m in Sources */,
+				FA59DD7A1F5A762B00EC1A86 /* CBJ3DLabel.m in Sources */,
+				FA59DD741F5A75C400EC1A86 /* CBJGradientLabel.m in Sources */,
+				FA59DD771F5A75EC00EC1A86 /* CBJHollowLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA59DD591F5A517900EC1A86 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA59DD5A1F5A517900EC1A86 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA59DD5E1F5A517900EC1A86 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA59DD5F1F5A517900EC1A86 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA59DD621F5A517900EC1A86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA59DD631F5A517900EC1A86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA59DD651F5A517900EC1A86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 484X4RMS42;
+				INFOPLIST_FILE = "Art font Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "chaobaji.Art-font-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FA59DD661F5A517900EC1A86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 484X4RMS42;
+				INFOPLIST_FILE = "Art font Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "chaobaji.Art-font-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA59DD481F5A517900EC1A86 /* Build configuration list for PBXProject "Art font Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA59DD621F5A517900EC1A86 /* Debug */,
+				FA59DD631F5A517900EC1A86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA59DD641F5A517900EC1A86 /* Build configuration list for PBXNativeTarget "Art font Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA59DD651F5A517900EC1A86 /* Debug */,
+				FA59DD661F5A517900EC1A86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA59DD451F5A517900EC1A86 /* Project object */;
+}

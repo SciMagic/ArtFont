@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self.colorView addSegmentControl:@[@"描边颜色",@"字体颜色"]];
+    [self.colorView addSegmentControl:@[@"OutlineColor",@"FontColor"]];
     
     CBJStrokeLabel *strokeLabel = [[CBJStrokeLabel alloc] initWithFrame:CGRectMake(0, 100, CGRectGetWidth(self.view.frame), 100)];
     strokeLabel.textAlignment = NSTextAlignmentCenter;
@@ -50,7 +50,7 @@
 
 - (void)didSelectColor:(UIColor *)color forKey:(NSString *)key
 {
-    if ([key isEqualToString:@"描边颜色"]) {
+    if ([key isEqualToString:@"OutlineColor"]) {
         
         self.strokeLabel.outlineColor = color;
         

@@ -22,7 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self.colorView addSegmentControl:@[@"光晕颜色",@"字体颜色"]];
+    [self.colorView addSegmentControl:@[@"GlowColor",@"FontColor"]];
     
     CBJGlowLabel *glowLabel = [[CBJGlowLabel alloc] initWithFrame:CGRectMake(0, 100, CGRectGetWidth(self.view.frame), 100)];
     glowLabel.textAlignment = NSTextAlignmentCenter;
@@ -49,7 +49,7 @@
 
 - (void)didSelectColor:(UIColor *)color forKey:(NSString *)key
 {
-    if ([key isEqualToString:@"光晕颜色"]) {
+    if ([key isEqualToString:@"GlowColor"]) {
         
         self.glowLabel.glowColor = color;
         

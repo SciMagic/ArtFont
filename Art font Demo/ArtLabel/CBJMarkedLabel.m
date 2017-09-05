@@ -7,6 +7,7 @@
 //
 
 #import "CBJMarkedLabel.h"
+#import "UIImage+TintColor.h"
 
 @interface CBJMarkedLabel ()
 @property (assign, nonatomic) CGFloat strokeWidth;

@@ -502,12 +502,54 @@
                     <view key="view" contentMode="scaleToFill" id="iTc-MJ-dp0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="8" minValue="1" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="yM2-KI-gqX">
+                                <rect key="frame" x="100" y="304" width="204" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="orientation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuA-6g-2tl">
+                                <rect key="frame" x="16" y="355" width="53" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="drawDepth" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBx-tD-zOP">
+                                <rect key="frame" x="16" y="313" width="53" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="vcB-T3-PnI">
+                                <rect key="frame" x="100" y="346" width="204" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="DuF-db-Hrj"/>
+                                    <constraint firstAttribute="height" constant="30" id="Vdr-9h-zl8"/>
+                                </constraints>
+                            </slider>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yuA-6g-2tl" firstAttribute="top" secondItem="MBx-tD-zOP" secondAttribute="bottom" constant="30" id="0Ep-24-sQi"/>
+                            <constraint firstItem="yM2-KI-gqX" firstAttribute="leading" secondItem="MBx-tD-zOP" secondAttribute="trailing" constant="33" id="1KZ-XQ-qhB"/>
+                            <constraint firstItem="yM2-KI-gqX" firstAttribute="width" secondItem="vcB-T3-PnI" secondAttribute="width" id="ED9-B1-v5E"/>
+                            <constraint firstItem="yuA-6g-2tl" firstAttribute="height" secondItem="MBx-tD-zOP" secondAttribute="height" id="MU2-j3-f3c"/>
+                            <constraint firstItem="yM2-KI-gqX" firstAttribute="centerY" secondItem="MBx-tD-zOP" secondAttribute="centerY" id="SNg-sG-ka9"/>
+                            <constraint firstItem="Ht4-yZ-lIA" firstAttribute="top" secondItem="yuA-6g-2tl" secondAttribute="bottom" constant="300" id="VIL-Bp-Gjl"/>
+                            <constraint firstItem="vcB-T3-PnI" firstAttribute="centerY" secondItem="yuA-6g-2tl" secondAttribute="centerY" id="VR0-vh-Ti6"/>
+                            <constraint firstItem="yuA-6g-2tl" firstAttribute="centerX" secondItem="MBx-tD-zOP" secondAttribute="centerX" id="dKt-A5-thC"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="yuA-6g-2tl" secondAttribute="leading" id="eKK-7Z-yFo"/>
+                            <constraint firstItem="yM2-KI-gqX" firstAttribute="height" secondItem="vcB-T3-PnI" secondAttribute="height" id="eTl-ls-rQh"/>
+                            <constraint firstItem="yuA-6g-2tl" firstAttribute="width" secondItem="MBx-tD-zOP" secondAttribute="width" id="nVI-en-0Rl"/>
+                            <constraint firstItem="vcB-T3-PnI" firstAttribute="leading" secondItem="yuA-6g-2tl" secondAttribute="trailing" constant="33" id="oy8-bc-jgq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="drawDepthSlider" destination="yM2-KI-gqX" id="tns-sd-Imy"/>
+                        <outlet property="orientationSlider" destination="vcB-T3-PnI" id="33S-KU-uGu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b4W-7F-cpG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2572" y="-549"/>
+            <point key="canvasLocation" x="2572" y="-549.17541229385313"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5Ho-y5-E2u">

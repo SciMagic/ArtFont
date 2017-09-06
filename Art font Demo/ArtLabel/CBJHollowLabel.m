@@ -16,9 +16,7 @@
     
     if (self) {
         
-        self.opaque = NO;
-        [super setBackgroundColor:[UIColor clearColor]];
-        [super setTextColor:[UIColor whiteColor]];
+        [self commonInit];
         
     }
     
@@ -32,9 +30,7 @@
     
     if (self) {
         
-        self.opaque = NO;
-        [super setBackgroundColor:[UIColor clearColor]];
-        [super setTextColor:[UIColor whiteColor]];
+        [self commonInit];
         
     }
     
@@ -42,16 +38,30 @@
     
 }
 
+- (void)commonInit
+{
+    self.opaque = NO;
+    _maskColor = [UIColor whiteColor];
+    self.backgroundColor = [UIColor clearColor];
+}
+
+
+- (void)setMaskColor:(UIColor *)maskColor
+{
+    _maskColor = maskColor;
+    [self setNeedsDisplay];
+}
 
 - (void)drawTextInRect:(CGRect)rect
 {
+    
+    self.textColor = [UIColor whiteColor];
 
     UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0);
     [super drawTextInRect:rect];
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGImageRef image = CGBitmapContextCreateImage(context);
     UIGraphicsEndImageContext();
-    
     
     context = UIGraphicsGetCurrentContext();
     
@@ -68,7 +78,7 @@
     CFRelease(mask);
     mask = NULL;
     
-    [[UIColor whiteColor] set];
+    [self.maskColor set];
     CGContextFillRect(context, rect);
     
     

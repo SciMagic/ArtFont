@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A03E00251F5FA408004E659A /* brush@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A03E00241F5FA408004E659A /* brush@2x.png */; };
 		A04BB0A71F5E42EF0042718F /* CBJGlitchLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A04BB0A61F5E42EF0042718F /* CBJGlitchLabel.m */; };
 		A04BB0D51F5E46A30042718F /* CBJPaletteView.m in Sources */ = {isa = PBXBuildFile; fileRef = A04BB0D11F5E46A30042718F /* CBJPaletteView.m */; };
 		A04BB0D61F5E46A30042718F /* circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A04BB0D21F5E46A30042718F /* circle@2x.png */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A03E00241F5FA408004E659A /* brush@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "brush@2x.png"; path = "ArtLabel/brush@2x.png"; sourceTree = "<group>"; };
 		A04BB0A51F5E42EF0042718F /* CBJGlitchLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBJGlitchLabel.h; path = ArtLabel/CBJGlitchLabel.h; sourceTree = "<group>"; };
 		A04BB0A61F5E42EF0042718F /* CBJGlitchLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBJGlitchLabel.m; path = ArtLabel/CBJGlitchLabel.m; sourceTree = "<group>"; };
 		A04BB0D01F5E46A30042718F /* CBJPaletteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBJPaletteView.h; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				FA59DD791F5A762B00EC1A86 /* CBJ3DLabel.m */,
 				FA59DD7B1F5A76CF00EC1A86 /* CBJMarkedLabel.h */,
 				FA59DD7C1F5A76CF00EC1A86 /* CBJMarkedLabel.m */,
+				A03E00241F5FA408004E659A /* brush@2x.png */,
 				A04BB0A51F5E42EF0042718F /* CBJGlitchLabel.h */,
 				A04BB0A61F5E42EF0042718F /* CBJGlitchLabel.m */,
 			);
@@ -268,6 +271,7 @@
 				A04BB0D81F5E46A30042718F /* strip@2x.png in Resources */,
 				FA59DD601F5A517900EC1A86 /* LaunchScreen.storyboard in Resources */,
 				FA59DD5D1F5A517900EC1A86 /* Assets.xcassets in Resources */,
+				A03E00251F5FA408004E659A /* brush@2x.png in Resources */,
 				FA59DD5B1F5A517900EC1A86 /* Main.storyboard in Resources */,
 				A04BB0D71F5E46A30042718F /* hexagon@2x.png in Resources */,
 			);

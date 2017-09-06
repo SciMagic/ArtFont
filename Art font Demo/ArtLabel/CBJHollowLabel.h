@@ -10,4 +10,6 @@
 
 @interface CBJHollowLabel : UILabel
 
+@property (strong, nonatomic) UIColor *maskColor;
+
 @end

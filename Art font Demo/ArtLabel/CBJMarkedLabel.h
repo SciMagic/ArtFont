@@ -11,8 +11,11 @@
 @interface CBJMarkedLabel : UILabel
 
 @property (assign, nonatomic) BOOL maskTop;
-@property (assign, nonatomic) CGFloat maskAlpha;
+
 @property (strong, nonatomic) UIImage *strokeTexture;
 @property (strong, nonatomic) UIColor *textureColor;
+
+@property (assign, nonatomic) CGFloat maskAlpha;
+@property (assign, nonatomic) NSUInteger randomRange;
 
 @end

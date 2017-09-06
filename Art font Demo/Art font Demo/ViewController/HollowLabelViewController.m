@@ -7,8 +7,11 @@
 //
 
 #import "HollowLabelViewController.h"
+#import "CBJHollowLabel.h"
 
 @interface HollowLabelViewController ()
+
+@property (weak, nonatomic) CBJHollowLabel *hollowLabel;
 
 @end
 
@@ -17,6 +20,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self.colorView addSegmentControl:@[@"maskColor"]];
+    
+    CBJHollowLabel *hollowLabel = [[CBJHollowLabel alloc] initWithFrame:CGRectMake(0, 100, CGRectGetWidth(self.view.frame), 100)];
+    hollowLabel.textAlignment = NSTextAlignmentCenter;
+    hollowLabel.font = [UIFont systemFontOfSize:60.f];
+    hollowLabel.text = @"HOLLOW";
+    self.hollowLabel = hollowLabel;
+    
+    [self.view addSubview:hollowLabel];
+    
+}
+
+- (void)didSelectColor:(UIColor *)color forKey:(NSString *)key
+{
+    if ([key isEqualToString:@"maskColor"]) {
+        
+        self.hollowLabel.maskColor = color;
+        
+    }
 }
 
 - (void)didReceiveMemoryWarning {

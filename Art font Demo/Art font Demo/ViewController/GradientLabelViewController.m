@@ -51,10 +51,10 @@
     gradientLabel.showControlPoint = YES;
     self.gradientLabel = gradientLabel;
     [self.view addSubview:gradientLabel];
-
-    [self commonInit];
     
     [self.colorView addSegmentControl:@[@"startColor", @"endColor"]];
+    
+    [self commonInit];
     
 }
 

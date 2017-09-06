@@ -16,6 +16,6 @@
 @property (strong, nonatomic) UIColor *textureColor;
 
 @property (assign, nonatomic) CGFloat maskAlpha;
-@property (assign, nonatomic) NSUInteger randomRange;
+@property (assign, nonatomic) NSUInteger spaceRange;
 
 @end

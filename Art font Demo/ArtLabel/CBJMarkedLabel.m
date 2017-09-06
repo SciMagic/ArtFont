@@ -44,9 +44,9 @@
 
 - (void)commonInit
 {
-    _textureColor = [UIColor blueColor];
+    _textureColor = [UIColor greenColor];
     _maskAlpha = 1.0f;
-    _randomRange = 20;
+    _spaceRange = 20;
 }
 
 /*
@@ -69,9 +69,7 @@
     CGFloat maxX = CGRectGetMaxX(rect);
     CGFloat midY = CGRectGetMidY(rect);
     
-    
-    //shift to left
-    CGFloat  i = minX - self.strokeWidth/5.f;
+    CGFloat  i = minX;
     
     if (self.maskTop) {
         
@@ -79,15 +77,20 @@
         
     }
     
-    //random shade
-    do {
-        
-        [[self.strokeTexture textureWithTintColor:self.textureColor] drawInRect:CGRectMake(i, midY - self.strokeWidth/2.f, self.strokeWidth, self.strokeWidth) blendMode:kCGBlendModeNormal alpha:self.maskAlpha];
-        CGFloat random = (((CGFloat) rand() / RAND_MAX) * self.randomRange) + 5;
-        i = i + random;
-        
-    } while (i + self.strokeWidth/2.f < maxX);
     
+    if (self.strokeTexture) {
+        
+        //randomly shade
+        do {
+            
+            [[self.strokeTexture textureWithTintColor:self.textureColor] drawInRect:CGRectMake(i, midY - self.strokeWidth/2.f, self.strokeWidth, self.strokeWidth) blendMode:kCGBlendModeNormal alpha:self.maskAlpha];
+            CGFloat random = (((CGFloat) rand() / RAND_MAX) * self.spaceRange) + 5;
+            i = i + random;
+            
+        } while (i + self.strokeWidth < maxX);
+        
+    }
+
     if (!self.maskTop){
         
         [super drawTextInRect:rect];
@@ -120,9 +123,9 @@
     [self setNeedsDisplay];
 }
 
-- (void)setRandomRange:(NSUInteger)randomRange
+- (void)setSpaceRange:(NSUInteger)spaceRange
 {
-    _randomRange = randomRange;
+    _spaceRange = spaceRange;
     [self setNeedsDisplay];
 }
 

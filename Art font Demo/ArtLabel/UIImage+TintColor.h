@@ -2,8 +2,8 @@
 //  UIImage+TintColor.h
 //  FontTest
 //
-//  Created by QD-ZC on 2017/8/24.
-//  Copyright © 2017年 QD-ZC. All rights reserved.
+//  Created by QD on 2017/8/24.
+//  Copyright © 2017年 QD. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

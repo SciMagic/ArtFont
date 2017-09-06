@@ -2,8 +2,8 @@
 //  UIImage+TintColor.m
 //  FontTest
 //
-//  Created by QD-ZC on 2017/8/24.
-//  Copyright © 2017年 QD-ZC. All rights reserved.
+//  Created by QD on 2017/8/24.
+//  Copyright © 2017年 QD. All rights reserved.
 //
 
 #import "UIImage+TintColor.h"
@@ -21,7 +21,7 @@ typedef NS_ENUM(NSInteger, Pixel) {
     CGFloat red, green, blue, alpha;
     
     [color getRed:&red green:&green blue:&blue alpha:&alpha];
-    // 1
+    
     uint8_t blendRed = ( (1 - alpha) + alpha * red) * 255;
     uint8_t blendGreen = ( (1 - alpha) + alpha * green ) * 255;
     uint8_t blendBlue = ( (1 - alpha) + alpha * blue ) * 255;

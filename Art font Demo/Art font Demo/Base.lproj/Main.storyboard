@@ -260,12 +260,66 @@
                     <view key="view" contentMode="scaleToFill" id="6xc-cJ-ccS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="maskAlpha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgt-CN-Kxh">
+                                <rect key="frame" x="40" y="313" width="59.5" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="spaceRange" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJG-Od-3Si">
+                                <rect key="frame" x="40" y="355" width="59.5" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9YJ-oD-XZI">
+                                <rect key="frame" x="130.5" y="304" width="173" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="169" id="PE5-UO-aaD"/>
+                                </constraints>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="eCu-ai-ddr">
+                                <rect key="frame" x="130.5" y="346" width="173" height="31"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTk-MU-QQ1">
+                                <rect key="frame" x="242" y="256" width="111" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="111" id="hJM-kM-jvf"/>
+                                    <constraint firstAttribute="height" constant="30" id="pYN-8c-oGW"/>
+                                </constraints>
+                                <state key="normal" title="reverseContent"/>
+                                <connections>
+                                    <action selector="reverseBtnClicked:" destination="8od-GB-KaJ" eventType="touchUpInside" id="nBp-1y-Hn5"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="P3U-ht-6lT" firstAttribute="top" secondItem="LJG-Od-3Si" secondAttribute="bottom" constant="300" id="5EH-e3-hPO"/>
+                            <constraint firstItem="Qgt-CN-Kxh" firstAttribute="leading" secondItem="6xc-cJ-ccS" secondAttribute="leadingMargin" constant="24" id="7CI-8C-JV5"/>
+                            <constraint firstItem="9YJ-oD-XZI" firstAttribute="leading" secondItem="Qgt-CN-Kxh" secondAttribute="trailing" constant="33" id="9Ll-81-04L"/>
+                            <constraint firstItem="LJG-Od-3Si" firstAttribute="width" secondItem="Qgt-CN-Kxh" secondAttribute="width" id="Cqw-zc-zLe"/>
+                            <constraint firstItem="eCu-ai-ddr" firstAttribute="centerX" secondItem="9YJ-oD-XZI" secondAttribute="centerX" id="Ex9-ca-XMk"/>
+                            <constraint firstItem="eCu-ai-ddr" firstAttribute="width" secondItem="9YJ-oD-XZI" secondAttribute="width" id="K7e-at-1Ss"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xTk-MU-QQ1" secondAttribute="trailing" constant="6" id="LBw-mb-4D7"/>
+                            <constraint firstItem="eCu-ai-ddr" firstAttribute="height" secondItem="9YJ-oD-XZI" secondAttribute="height" id="Lmp-i5-U7X"/>
+                            <constraint firstItem="LJG-Od-3Si" firstAttribute="height" secondItem="Qgt-CN-Kxh" secondAttribute="height" id="cOI-ar-4x0"/>
+                            <constraint firstItem="9YJ-oD-XZI" firstAttribute="centerY" secondItem="Qgt-CN-Kxh" secondAttribute="centerY" id="cUM-WW-9Ix"/>
+                            <constraint firstItem="LJG-Od-3Si" firstAttribute="top" secondItem="Qgt-CN-Kxh" secondAttribute="bottom" constant="30" id="g8M-0w-4UE"/>
+                            <constraint firstItem="LJG-Od-3Si" firstAttribute="centerX" secondItem="Qgt-CN-Kxh" secondAttribute="centerX" id="hV8-w5-Exb"/>
+                            <constraint firstItem="9YJ-oD-XZI" firstAttribute="top" secondItem="xTk-MU-QQ1" secondAttribute="bottom" constant="18" id="nXI-1d-FLk"/>
+                            <constraint firstItem="eCu-ai-ddr" firstAttribute="centerY" secondItem="LJG-Od-3Si" secondAttribute="centerY" id="nym-5F-eGp"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="maskAlphaSlider" destination="9YJ-oD-XZI" id="L6r-RK-b1U"/>
+                        <outlet property="spaceRangeSlider" destination="eCu-ai-ddr" id="5zY-w9-xKS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ajI-xS-vmz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2572" y="707"/>
+            <point key="canvasLocation" x="2572" y="706.59670164917543"/>
         </scene>
         <!--Stroke Label View Controller-->
         <scene sceneID="G4o-x2-jwe">

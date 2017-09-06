@@ -22,8 +22,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self commonInit];
-
     CBJ3DLabel *cbj3DLabel = [[CBJ3DLabel alloc] initWithFrame:CGRectMake(0, 100, CGRectGetWidth(self.view.frame), 100)];
     cbj3DLabel.textAlignment = NSTextAlignmentCenter;
     cbj3DLabel.font = [UIFont systemFontOfSize:60.f];
@@ -33,6 +31,8 @@
     [self.view addSubview:self.cbj3DLabel];
     
     [self.colorView addSegmentControl:@[@"subjectColor",@"bottomBlurColor"]];
+    
+    [self commonInit];
     
 }
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A03E00251F5FA408004E659A /* brush@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A03E00241F5FA408004E659A /* brush@2x.png */; };
+		A03E002A1F5FD8D6004E659A /* GlitchLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03E00291F5FD8D6004E659A /* GlitchLabelViewController.m */; };
 		A04BB0A71F5E42EF0042718F /* CBJGlitchLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A04BB0A61F5E42EF0042718F /* CBJGlitchLabel.m */; };
 		A04BB0D51F5E46A30042718F /* CBJPaletteView.m in Sources */ = {isa = PBXBuildFile; fileRef = A04BB0D11F5E46A30042718F /* CBJPaletteView.m */; };
 		A04BB0D61F5E46A30042718F /* circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A04BB0D21F5E46A30042718F /* circle@2x.png */; };
@@ -38,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		A03E00241F5FA408004E659A /* brush@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "brush@2x.png"; path = "ArtLabel/brush@2x.png"; sourceTree = "<group>"; };
+		A03E00281F5FD8D6004E659A /* GlitchLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlitchLabelViewController.h; path = "Art font Demo/ViewController/GlitchLabelViewController.h"; sourceTree = "<group>"; };
+		A03E00291F5FD8D6004E659A /* GlitchLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlitchLabelViewController.m; path = "Art font Demo/ViewController/GlitchLabelViewController.m"; sourceTree = "<group>"; };
 		A04BB0A51F5E42EF0042718F /* CBJGlitchLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBJGlitchLabel.h; path = ArtLabel/CBJGlitchLabel.h; sourceTree = "<group>"; };
 		A04BB0A61F5E42EF0042718F /* CBJGlitchLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBJGlitchLabel.m; path = ArtLabel/CBJGlitchLabel.m; sourceTree = "<group>"; };
 		A04BB0D01F5E46A30042718F /* CBJPaletteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBJPaletteView.h; sourceTree = "<group>"; };
@@ -202,6 +205,8 @@
 				FA59DD881F5A774D00EC1A86 /* CBJ3DLabelViewController.m */,
 				FA59DD8A1F5A776400EC1A86 /* MarkedLabelViewController.h */,
 				FA59DD8B1F5A776400EC1A86 /* MarkedLabelViewController.m */,
+				A03E00281F5FD8D6004E659A /* GlitchLabelViewController.h */,
+				A03E00291F5FD8D6004E659A /* GlitchLabelViewController.m */,
 				A04BB0DD1F5E50450042718F /* BaseViewController.h */,
 				A04BB0DE1F5E50450042718F /* BaseViewController.m */,
 			);
@@ -302,6 +307,7 @@
 				FA59DD711F5A754600EC1A86 /* CBJGlowLabel.m in Sources */,
 				FA59DD7A1F5A762B00EC1A86 /* CBJ3DLabel.m in Sources */,
 				A04BB0A71F5E42EF0042718F /* CBJGlitchLabel.m in Sources */,
+				A03E002A1F5FD8D6004E659A /* GlitchLabelViewController.m in Sources */,
 				FA59DD741F5A75C400EC1A86 /* CBJGradientLabel.m in Sources */,
 				FA59DD771F5A75EC00EC1A86 /* CBJHollowLabel.m in Sources */,
 			);

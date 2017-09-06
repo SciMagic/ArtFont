@@ -171,6 +171,31 @@
                                             <segue destination="8od-GB-KaJ" kind="show" id="m6C-Q1-zlO"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="bkA-a4-m9o">
+                                        <rect key="frame" x="0.0" y="264" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bkA-a4-m9o" id="4g4-ZR-MuH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    GlitchLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kan-k5-GmC">
+                                                    <rect key="frame" x="-0.5" y="-0.5" width="375" height="44"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Kan-k5-GmC" firstAttribute="height" secondItem="4g4-ZR-MuH" secondAttribute="height" id="Ki7-Ow-6oN"/>
+                                                <constraint firstItem="Kan-k5-GmC" firstAttribute="centerX" secondItem="4g4-ZR-MuH" secondAttribute="centerX" id="ShA-7b-leV"/>
+                                                <constraint firstItem="Kan-k5-GmC" firstAttribute="width" secondItem="4g4-ZR-MuH" secondAttribute="width" id="U3W-bd-CFd"/>
+                                                <constraint firstItem="Kan-k5-GmC" firstAttribute="centerY" secondItem="4g4-ZR-MuH" secondAttribute="centerY" id="pj0-tz-mhk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="aBe-vY-CAt" kind="show" id="IH2-eQ-6tO"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -320,6 +345,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ajI-xS-vmz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2572" y="706.59670164917543"/>
+        </scene>
+        <!--Glitch Label View Controller-->
+        <scene sceneID="pc0-6G-sqa">
+            <objects>
+                <viewController id="aBe-vY-CAt" customClass="GlitchLabelViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aJg-4w-42c"/>
+                        <viewControllerLayoutGuide type="bottom" id="AuG-cH-70E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lmm-w3-90Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3oN-1m-eih" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3394" y="707"/>
         </scene>
         <!--Stroke Label View Controller-->
         <scene sceneID="G4o-x2-jwe">

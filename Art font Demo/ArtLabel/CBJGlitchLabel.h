@@ -10,4 +10,8 @@
 
 @interface CBJGlitchLabel : UILabel
 
+@property (strong, nonatomic) UIColor *leftColor;
+@property (strong, nonatomic) UIColor *centerColor;
+@property (strong, nonatomic) UIColor *rightColor;
+
 @end

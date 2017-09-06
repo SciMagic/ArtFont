@@ -25,7 +25,7 @@
     // Do any additional setup after loading the view.
     CBJGlitchLabel *glitchLabel = [[CBJGlitchLabel alloc] initWithFrame:CGRectMake(0, 100, CGRectGetWidth(self.view.frame), 100)];
     glitchLabel.textAlignment = NSTextAlignmentCenter;
-    glitchLabel.font = [UIFont systemFontOfSize:60.f];
+    glitchLabel.font = [UIFont fontWithName:@"Arial-ItalicMT" size:60.f];
     glitchLabel.text = @"GLITCH";
     self.glitchLabel = glitchLabel;
     [self.view addSubview:glitchLabel];

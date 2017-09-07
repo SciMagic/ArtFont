@@ -67,7 +67,7 @@
     
     CGContextConcatCTM(context, CGAffineTransformMake(1, 0, 0, -1, 0, CGRectGetHeight(rect)));
     
-    //image被当成灰度图处理，黑色标示alpha为0,白色标示alpha为1，上面将textColor设置为白色，为的就是将文字作为mask
+    //image被当成灰度图处理，黑色标示alpha为1,白色标示alpha为0，上面将textColor设置为白色，为的就是将文字部分消除
     CGImageRef mask = CGImageMaskCreate(CGImageGetWidth(image), CGImageGetHeight(image), CGImageGetBitsPerComponent(image), CGImageGetBitsPerPixel(image), CGImageGetBytesPerRow(image), CGImageGetDataProvider(image), CGImageGetDecode(image), CGImageGetShouldInterpolate(image));
     
     CFRelease(image);

@@ -61,8 +61,6 @@
     
     CGContextRef context = UIGraphicsGetCurrentContext();
     
-    CGContextSetShadow(context, CGSizeZero, self.glowSize);
-    
     CGContextSetShadowWithColor(context, CGSizeZero, self.glowSize, self.glowColor.CGColor);
     
     [super drawTextInRect:rect];

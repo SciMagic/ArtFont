@@ -51,7 +51,6 @@
 
 - (void)drawTextInRect:(CGRect)rect
 {
-    
     //for linear Gradient
     CGPoint startPoint = CGPointMake(0 + self.startPointOffset.x, 0 + self.startPointOffset.y);
     CGPoint endPoint = CGPointMake(CGRectGetMaxX(rect) - self.endPointOffset.x, CGRectGetMaxY(rect) - self.endPointOffset.y);
@@ -70,7 +69,7 @@
     UIGraphicsEndImageContext();
     
     
-    //Avoid cliping origin context,So begin a image context,and clip to it
+    //Avoid cliping origin context(for show controlPoint),So begin a image context,and clip to it.
     UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0);
     
     context = UIGraphicsGetCurrentContext();

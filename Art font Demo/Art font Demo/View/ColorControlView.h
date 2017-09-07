@@ -12,12 +12,15 @@
 
 - (void)didSelectColor:(UIColor *)color forKey:(NSString *)key;
 
+- (NSString *)getStyleString;
+
 @end
 
 @interface ColorControlView : UIView
 
 - (void)addSegmentControl:(NSArray<NSString *>*)segmentNames;
 
+- (void)updateInfo;
 @property (weak, nonatomic) id<ColorControlViewDelegate> delegate;
 
 @end

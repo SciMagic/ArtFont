@@ -46,6 +46,7 @@
 - (void)slideValueChange:(UISlider *)slider
 {
     self.strokeLabel.outlineWidth = slider.value;
+    [self updateInfo];
 }
 
 - (void)didSelectColor:(UIColor *)color forKey:(NSString *)key
@@ -59,6 +60,15 @@
         self.strokeLabel.textColor = color;
         
     }
+    [self updateInfo];
+}
+
+- (NSString *)getStyleString
+{
+    NSString *outlineColor = [self hexStringFromColor:self.strokeLabel.outlineColor];
+    NSString *textColor = [self hexStringFromColor:self.strokeLabel.textColor];
+    NSString *style = [NSString stringWithFormat:@"StrokeLabel \n OutlineColor: %@ \n FontColor: %@ \n OutLineWidth: %f", outlineColor, textColor, self.strokeLabel.outlineWidth];
+    return style;
 }
 
 /*

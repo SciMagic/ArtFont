@@ -12,6 +12,7 @@
 @interface ColorControlView () <CBJPaletteViewDelegate>
 
 @property (nonatomic, copy) NSString *selectKey;
+@property (nonatomic, weak) UITextView *editerInfoView;
 
 @end
 
@@ -54,6 +55,7 @@
 {
     [self addColorPicker];
     [self addClearBtn];
+    [self addInfoView];
 }
 
 
@@ -67,6 +69,15 @@
     [self addSubview:control];
 }
 
+- (void)updateInfo
+{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(getStyleString)]) {
+        
+        self.editerInfoView.text = [self.delegate getStyleString];
+        
+    }
+}
+
 - (void)addColorPicker
 {
     CBJPaletteView *palette = [[CBJPaletteView alloc] initWithPaletteType:PaletteHexagon withFrame:CGRectMake(0, 0, 150, 150)];
@@ -78,11 +89,29 @@
 - (void)addClearBtn
 {
     UIButton *botton = [UIButton buttonWithType:UIButtonTypeSystem];
-    [botton setTitle:@"set conter clear" forState:UIControlStateNormal];
-    botton.frame = CGRectMake(0, 0, 110, 100);
-    botton.center = CGPointMake(self.center.x - 100, CGRectGetHeight(self.frame) - 150.f);
+    [botton setTitle:@"clear" forState:UIControlStateNormal];
+    botton.frame = CGRectMake(CGRectGetWidth(self.frame) - 50, CGRectGetHeight(self.frame) - 130, 50, 100);
     [botton addTarget:self action:@selector(clearBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:botton];
+}
+
+- (void)addInfoView
+{
+    UITextView *infoView = [[UITextView alloc] initWithFrame:CGRectMake(0, 50, CGRectGetWidth(self.frame)/2.f, CGRectGetHeight(self.frame) - 100)];
+    infoView.editable = NO;
+    infoView.layer.borderWidth = 1;
+    infoView.layer.borderColor = self.tintColor.CGColor;
+    infoView.backgroundColor = [UIColor clearColor];
+    infoView.selectable = YES;
+    infoView.scrollEnabled = YES;
+    infoView.alwaysBounceVertical = YES;
+    infoView.showsVerticalScrollIndicator = YES;
+    infoView.textAlignment = NSTextAlignmentCenter;
+    infoView.text = @"";
+    self.editerInfoView = infoView;
+    [self addSubview:infoView];
+    
+    
 }
 
 - (void)segmentChanged:(UISegmentedControl *)control
@@ -98,6 +127,7 @@
         
     }
 }
+
 
 #pragma mark ---CBJPaletteViewDelegate---
 - (void)didSelectColor:(CBJPaletteView *)view selectedColor:(UIColor *)color

@@ -49,6 +49,7 @@
 - (IBAction)reverseBtnClicked:(id)sender {
     
     self.markedLabel.maskTop = !self.markedLabel.maskTop;
+    [self updateInfo];
     
 }
 
@@ -63,6 +64,7 @@
         self.markedLabel.spaceRange = (NSUInteger)(slider.value + 0.5);
         
     }
+    [self updateInfo];
 }
 
 - (void)didSelectColor:(UIColor *)color forKey:(NSString *)key
@@ -76,6 +78,20 @@
         self.markedLabel.textColor = color;
         
     }
+    [self updateInfo];
+}
+
+
+- (NSString *)getStyleString
+{
+    
+    NSString *textureColorStr = [self hexStringFromColor:self.markedLabel.textureColor];
+    NSString *textColorStr = [self hexStringFromColor:self.markedLabel.textColor];
+    NSString *maskTopStr = self.markedLabel.maskTop? @"YES" : @"NO";
+    
+    NSString *style = [NSString stringWithFormat:@"MarkedLabel \n TextureColor: %@ \n FontColor: %@ \n MaskAlpha: %.1f \n SpaceRange: %lu \n MaskTop: %@", textureColorStr, textColorStr, self.markedLabel.maskAlpha,(unsigned long)self.markedLabel.spaceRange, maskTopStr];
+    
+    return style;
 }
 
 - (void)didReceiveMemoryWarning {

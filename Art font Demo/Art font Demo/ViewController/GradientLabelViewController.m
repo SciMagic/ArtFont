@@ -76,6 +76,7 @@
         self.gradientLabel.type = kGradientTypeRadial;
         
     }
+    [self updateInfo];
 }
 
 - (void)didSelectColor:(UIColor *)color forKey:(NSString *)key
@@ -89,6 +90,33 @@
         self.gradientLabel.endColor = color;
         
     }
+    [self updateInfo];
+}
+
+- (NSString *)getStyleString
+{
+    
+    CGFloat labelHeight = CGRectGetHeight(self.gradientLabel.frame);
+    CGFloat labelWidth = CGRectGetWidth(self.gradientLabel.frame);
+    NSString *startColor = [self hexStringFromColor:self.gradientLabel.startColor];
+    NSString *endColor = [self hexStringFromColor:self.gradientLabel.endColor];
+    
+    if (self.gradientLabel.type == kGradientTypeLinear) {
+        
+        NSString *startPointStr = [NSString stringWithFormat:@"(%.1f, %.1f)", self.gradientLabel.startPointOffset.x/labelWidth, self.gradientLabel.startPointOffset.y/labelHeight];
+        NSString *endPointStr = [NSString stringWithFormat:@"(%.1f, %.1f)", self.gradientLabel.endPointOffset.x/labelWidth, self.gradientLabel.endPointOffset.y/labelHeight];
+        NSString *style = [NSString stringWithFormat:@"LinearGradient \n StartColor: %@ \n EndColor: %@ \n StartPoint: %@ \n EndPoint: %@",startColor, endColor, startPointStr, endPointStr];
+        return style;
+        
+    }else{
+        
+        NSString *startCenterStr = [NSString stringWithFormat:@"(%.1f, %.1f)", self.gradientLabel.startCenterOffset.x/labelWidth, self.gradientLabel.startCenterOffset.y/labelHeight];
+        NSString *endCenterStr = [NSString stringWithFormat:@"(%.1f, %.1f)", self.gradientLabel.endCenterOffset.x/labelWidth, self.gradientLabel.endCenterOffset.y/labelHeight];
+        
+        NSString *style = [NSString stringWithFormat:@"RadialGradient \n StartColor: %@ \n EndColor: %@ \n StartCenter: %@ \n EndCenter: %@ \n StartRadius: %.1f \n EndRadius: %.1f", startColor, endColor, startCenterStr, endCenterStr, self.gradientLabel.startRadius, self.gradientLabel.endRadius];
+        return style;
+    }
+    
 }
 
 
@@ -102,6 +130,7 @@
         
         [self handleRadialSlider:slider];
     }
+    [self updateInfo];
 }
 
 - (void)handleLinearSlider:(UISlider *)slider

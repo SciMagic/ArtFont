@@ -45,6 +45,7 @@
 - (void)slideValueChange:(UISlider *)slider
 {
     self.glowLabel.glowSize = slider.value;
+    [self updateInfo];
 }
 
 - (void)didSelectColor:(UIColor *)color forKey:(NSString *)key
@@ -58,6 +59,16 @@
         self.glowLabel.textColor = color;
         
     }
+    [self updateInfo];
+}
+
+- (NSString *)getStyleString
+{
+    NSString *glowColor = [self hexStringFromColor:self.glowLabel.glowColor];
+    NSString *textColor = [self hexStringFromColor:self.glowLabel.textColor];
+    NSString *style = [NSString stringWithFormat:@"GlowLabel \n GlowColor: %@ \n FontColor: %@ \n GlowSize: %f", glowColor, textColor, self.glowLabel.glowSize];
+    return style;
+    
 }
 
 /*

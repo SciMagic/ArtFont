@@ -40,6 +40,15 @@
         self.hollowLabel.maskColor = color;
         
     }
+    [self updateInfo];
+}
+
+- (NSString *)getStyleString
+{
+    NSString *maskColorStr = [self hexStringFromColor:self.hollowLabel.maskColor];
+    NSString *style = [NSString stringWithFormat:@"HollowLabel \n MaskColor: %@", maskColorStr];
+    return style;
+    
 }
 
 - (void)didReceiveMemoryWarning {

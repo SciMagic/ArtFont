@@ -25,6 +25,24 @@
     self.view.backgroundColor = [UIColor lightGrayColor];
 }
 
+- (void)updateInfo
+{
+    [self.colorView updateInfo];
+}
+
+- (NSString *)hexStringFromColor:(UIColor *)color {
+    const CGFloat *components = CGColorGetComponents(color.CGColor);
+    
+    CGFloat r = components[0];
+    CGFloat g = components[1];
+    CGFloat b = components[2];
+    
+    return [NSString stringWithFormat:@"#%02lX%02lX%02lX",
+            lroundf(r * 255),
+            lroundf(g * 255),
+            lroundf(b * 255)];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -32,6 +50,12 @@
 
 - (void)didSelectColor:(UIColor *)color forKey:(NSString *)key
 {
+    
+}
+
+- (NSString *)getStyleString
+{
+    return @"";
     
 }
 

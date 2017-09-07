@@ -54,7 +54,7 @@
         
         self.cbj3DLabel.drawDepth = (NSUInteger)(self.drawDepthSlider.value + 0.5f);
     }
-    
+    [self updateInfo];
 }
 
 - (void)didSelectColor:(UIColor *)color forKey:(NSString *)key
@@ -68,6 +68,17 @@
         self.cbj3DLabel.bottomBlurColor = color;
         
     }
+    [self updateInfo];
+}
+
+- (NSString *)getStyleString
+{
+    NSString *subjColorStr = [self hexStringFromColor:self.cbj3DLabel.subjectColor];
+    NSString *bottomBlurColorStr = [self hexStringFromColor:self.cbj3DLabel.bottomBlurColor];
+    
+    NSString *style = [NSString stringWithFormat:@"3DLabel \n SubJectColor: %@ \n BottomBlurColor: %@ \n Orientation: %lu \n DrawDepth: %lu",subjColorStr, bottomBlurColorStr, (unsigned long)self.cbj3DLabel.orientation, (unsigned long)self.cbj3DLabel.drawDepth];
+    return style;
+    
 }
 
 

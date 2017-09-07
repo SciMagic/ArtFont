@@ -13,4 +13,8 @@
 
 @property (weak, nonatomic) ColorControlView *colorView;
 
+- (void)updateInfo;
+
+- (NSString *)hexStringFromColor:(UIColor *)color;
+
 @end

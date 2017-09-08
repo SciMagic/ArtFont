@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor blackColor];
+    //self.view.backgroundColor = [UIColor blackColor];
     
     // Do any additional setup after loading the view.
     CBJGlitchLabel *glitchLabel = [[CBJGlitchLabel alloc] initWithFrame:CGRectMake(0, 100, CGRectGetWidth(self.view.frame), 100)];
@@ -30,24 +30,51 @@
     self.glitchLabel = glitchLabel;
     [self.view addSubview:glitchLabel];
     
-    [self.colorView addSegmentControl:@[@"leftColor",@"centerColor",@"rightColor"]];
+    [self.colorView addSegmentControl:@[@"bottomColor",@"middleColor",@"topColor"]];
 }
 
 - (void)didSelectColor:(UIColor *)color forKey:(NSString *)key
 {
-    if ([key isEqualToString:@"leftColor"]) {
+    if ([key isEqualToString:@"bottomColor"]) {
         
-        self.glitchLabel.leftColor = color;
+        self.glitchLabel.bottomColor = [self thinColor:color alpha:0.7f];
         
-    }else if ([key isEqualToString:@"rightColor"]){
+    }else if ([key isEqualToString:@"middleColor"]){
         
-        self.glitchLabel.rightColor = color;
+        self.glitchLabel.middleColor = [self thinColor:color alpha:0.7f];
         
     }else{
         
-        self.glitchLabel.centerColor = color;
+        self.glitchLabel.topColor = [self thinColor:color alpha:0.7f];
         
     }
+    [self updateInfo];
+}
+
+- (NSString *)getStyleString
+{
+    
+    NSString *bottomColorStr = [self hexStringFromColor:self.glitchLabel.bottomColor];
+    NSString *middleColorStr = [self hexStringFromColor:self.glitchLabel.middleColor];
+    NSString *topColorStr = [self hexStringFromColor:self.glitchLabel.topColor];
+    
+    NSString *style = [NSString stringWithFormat:@"GlitchLabel \n BottomColor: %@ \n MiddleColor: %@ \n TopColor: %@", bottomColorStr, middleColorStr, topColorStr];
+    
+    return style;
+}
+
+
+- (UIColor *)thinColor:(UIColor *)originColor alpha:(CGFloat)talpha
+{
+    CGFloat red,green,blue,alpha = 0.0;
+    [originColor getRed:&red green:&green blue:&blue alpha:&alpha];
+    UIColor *thinColor = [UIColor colorWithRed:red green:green blue:blue alpha:talpha];
+    return thinColor;
+}
+- (IBAction)redrawRandomLineClicked:(id)sender {
+    
+    [self.glitchLabel redrawRandomLine];
+    
 }
 
 - (void)didReceiveMemoryWarning {

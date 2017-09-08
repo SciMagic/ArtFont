@@ -69,7 +69,7 @@
     UIGraphicsEndImageContext();
     
     
-    //Avoid cliping origin context(for show controlPoint),So begin a image context,and clip to it.
+    //Avoid cliping origin context(for show controlPoint),So begin a image context and clip to it.
     UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0);
     
     context = UIGraphicsGetCurrentContext();

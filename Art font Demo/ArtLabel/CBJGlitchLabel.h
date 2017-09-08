@@ -10,8 +10,16 @@
 
 @interface CBJGlitchLabel : UILabel
 
-@property (strong, nonatomic) UIColor *leftColor;
-@property (strong, nonatomic) UIColor *centerColor;
-@property (strong, nonatomic) UIColor *rightColor;
+@property (strong, nonatomic) UIColor *topColor;
+@property (strong, nonatomic) UIColor *middleColor;
+@property (strong, nonatomic) UIColor *bottomColor;
+
+@property (assign, nonatomic) CGPoint middleOffset;
+@property (assign, nonatomic) CGPoint bottomOffset;
+
+@property (copy, nonatomic) NSArray<NSValue *> *sliceRects;
+@property (assign, nonatomic) BOOL showSlice;
+
+- (void)redrawRandomLine;
 
 @end

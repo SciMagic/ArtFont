@@ -11,6 +11,7 @@
 
 @interface CBJMarkedLabel ()
 @property (assign, nonatomic) CGFloat strokeWidth;
+@property (strong, nonatomic) NSArray *strokeRects;
 @end
 
 
@@ -65,11 +66,7 @@
 - (void)drawTextInRect:(CGRect)rect
 {
     
-    CGFloat minX = CGRectGetMinX(rect);
-    CGFloat maxX = CGRectGetMaxX(rect);
-    CGFloat midY = CGRectGetMidY(rect);
-    
-    CGFloat  i = minX;
+
     
     if (self.maskTop) {
         
@@ -80,14 +77,16 @@
     
     if (self.strokeTexture) {
         
-        //randomly shade
-        do {
+        if (self.strokeRects) {
             
-            [[self.strokeTexture textureWithTintColor:self.textureColor] drawInRect:CGRectMake(i, midY - self.strokeWidth/2.f, self.strokeWidth, self.strokeWidth) blendMode:kCGBlendModeNormal alpha:self.maskAlpha];
-            CGFloat random = (((CGFloat) rand() / RAND_MAX) * self.spaceRange) + 5;
-            i = i + random;
+            [self strokeTextureInRects:self.strokeRects];
             
-        } while (i + self.strokeWidth < maxX);
+        }else{
+            
+            self.strokeRects = [self generalStrokeRects:rect];
+            [self strokeTextureInRects:self.strokeRects];
+            
+        }
         
     }
 
@@ -96,6 +95,39 @@
         [super drawTextInRect:rect];
         
     }
+    
+}
+
+- (void)strokeTextureInRects:(NSArray *)rects
+{
+    for (NSValue *rectValue in rects) {
+        
+        CGRect rect = [rectValue CGRectValue];
+        [[self.strokeTexture textureWithTintColor:self.textureColor] drawInRect:rect blendMode:kCGBlendModeNormal alpha:self.maskAlpha];
+        
+    }
+}
+
+- (NSArray *)generalStrokeRects:(CGRect)contentRect
+{
+    NSMutableArray *rects = [NSMutableArray array];
+    
+    CGFloat minX = CGRectGetMinX(contentRect);
+    CGFloat maxX = CGRectGetMaxX(contentRect);
+    CGFloat midY = CGRectGetMidY(contentRect);
+    
+    CGFloat  i = minX;
+    
+    do {
+        
+        CGRect rect = CGRectMake(i, midY - self.strokeWidth/2.f, self.strokeWidth, self.strokeWidth);
+        CGFloat random = (((CGFloat) rand() / RAND_MAX) * self.spaceRange) + 5;
+        i = i + random;
+        [rects addObject:[NSValue valueWithCGRect:rect]];
+        
+    } while (i + self.strokeWidth < maxX);
+    
+    return [rects copy];
     
 }
 
@@ -126,6 +158,7 @@
 - (void)setSpaceRange:(NSUInteger)spaceRange
 {
     _spaceRange = spaceRange;
+    _strokeRects = nil;
     [self setNeedsDisplay];
 }
 

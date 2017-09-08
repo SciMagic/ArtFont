@@ -113,7 +113,7 @@
 }
 
 
-//为每个深度平滑的生成一个颜色，让字体看起来有一定透视感
+//make smooth color
 - (NSArray *)generalColorsWithRed:(CGFloat)redComponent green:(CGFloat)greenComponent blue:(CGFloat)blueComponent alpha:(CGFloat)alphaComponent
 {
     NSMutableArray *colorArrays = [[NSMutableArray alloc] initWithCapacity:self.drawDepth];
@@ -159,7 +159,7 @@
     return colorArrays;
 }
 
-//生成顶层描边颜色，给顶层添加一定的锐化效果，看起来棱角分明，这是调出来的效果，别疑惑为什么是+0.09
+//general outline for toplayer,make it's more angular
 - (UIColor *)getTopLayerOutLineColor:(CGFloat)redComponent green:(CGFloat)greenComponent blue:(CGFloat)blueComponent alpha:(CGFloat)alphaComponent
 {
     
@@ -175,21 +175,21 @@
 }
 
 
-//获取颜色分量，直接使用[UIColor whiteColor]等生成的是灰度空间色彩，components的值是不一样的
+//Gray Color Space And RGBA Color Space
 - (void)getColorComponentRed:(CGFloat *)redComponent Green:(CGFloat *)greenComponent Blue:(CGFloat *)blueComponent Alpha:(CGFloat *)alphaComponent
 {
     CGFloat *components = (CGFloat *)CGColorGetComponents(self.subjectColor.CGColor);
     
     if (CGColorGetNumberOfComponents(self.subjectColor.CGColor) == 2)
     {
-        // 灰度空间
+        // Gray Color Space,eg.[UIColor whiteColor]
         *redComponent = *greenComponent = *blueComponent = components[0];
         *alphaComponent = components[1];
         
     }
     else if (CGColorGetNumberOfComponents(self.subjectColor.CGColor) == 4)
     {
-        // 彩色RGBA空间
+        // RGBA Color Space
         *redComponent = components[0];
         *greenComponent = components[1];
         *blueComponent = components[2];

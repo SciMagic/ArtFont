@@ -196,6 +196,31 @@
                                             <segue destination="aBe-vY-CAt" kind="show" id="IH2-eQ-6tO"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="kfQ-NU-aGL">
+                                        <rect key="frame" x="0.0" y="308" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kfQ-NU-aGL" id="wiU-2G-mgJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    MateriaLabel(模拟器有点卡，稍等会)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vR-QM-qpx">
+                                                    <rect key="frame" x="-0.5" y="-0.5" width="375" height="44"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1vR-QM-qpx" firstAttribute="height" secondItem="wiU-2G-mgJ" secondAttribute="height" id="Dh9-aJ-MgK"/>
+                                                <constraint firstItem="1vR-QM-qpx" firstAttribute="width" secondItem="wiU-2G-mgJ" secondAttribute="width" id="M4x-b7-hC7"/>
+                                                <constraint firstItem="1vR-QM-qpx" firstAttribute="centerX" secondItem="wiU-2G-mgJ" secondAttribute="centerX" id="bZJ-zy-uCe"/>
+                                                <constraint firstItem="1vR-QM-qpx" firstAttribute="centerY" secondItem="wiU-2G-mgJ" secondAttribute="centerY" id="guJ-kp-lix"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="G3U-jq-oDP" kind="show" id="SYz-9s-thR"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -660,6 +685,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b4W-7F-cpG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2572" y="-549.17541229385313"/>
+        </scene>
+        <!--Materia View Controller-->
+        <scene sceneID="bQJ-QT-tAC">
+            <objects>
+                <viewController id="G3U-jq-oDP" customClass="MateriaViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h8h-xE-ttq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hyz-RZ-vy3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zkk-Gf-hyC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Smd-Oz-MMO">
+                                <rect key="frame" x="48" y="339" width="279" height="29"/>
+                                <segments>
+                                    <segment title="Golden"/>
+                                    <segment title="DarkBlue"/>
+                                    <segment title="Matel"/>
+                                    <segment title="Pink"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="模拟器运行会比较慢，稍等会" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZB7-rO-9s1">
+                                <rect key="frame" x="74.5" y="503" width="225.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZB7-rO-9s1" firstAttribute="top" secondItem="Smd-Oz-MMO" secondAttribute="bottom" constant="136" id="F0m-CA-HqY"/>
+                            <constraint firstItem="Hyz-RZ-vy3" firstAttribute="top" secondItem="Smd-Oz-MMO" secondAttribute="bottom" constant="300" id="VTJ-7a-dXZ"/>
+                            <constraint firstItem="Smd-Oz-MMO" firstAttribute="centerX" secondItem="zkk-Gf-hyC" secondAttribute="centerX" id="Zc2-CV-VMM"/>
+                            <constraint firstItem="ZB7-rO-9s1" firstAttribute="centerX" secondItem="zkk-Gf-hyC" secondAttribute="centerX" id="xt6-an-C31"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="materiaSegment" destination="Smd-Oz-MMO" id="v7F-pI-BC0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QAa-td-w8v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3484" y="-549.17541229385313"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5Ho-y5-E2u">

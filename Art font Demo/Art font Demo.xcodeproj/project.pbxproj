@@ -16,6 +16,12 @@
 		A04BB0D81F5E46A30042718F /* strip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A04BB0D41F5E46A30042718F /* strip@2x.png */; };
 		A04BB0DB1F5E49320042718F /* ColorControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = A04BB0DA1F5E49320042718F /* ColorControlView.m */; };
 		A04BB0DF1F5E50450042718F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A04BB0DE1F5E50450042718F /* BaseViewController.m */; };
+		A0A3BA841F62A79500F364CA /* CBJMateriaLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A3BA831F62A79500F364CA /* CBJMateriaLabel.m */; };
+		A0A3BA871F62A80700F364CA /* MateriaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A3BA861F62A80700F364CA /* MateriaViewController.m */; };
+		A0A3BA8B1F62B04200F364CA /* Golden.png in Resources */ = {isa = PBXBuildFile; fileRef = A0A3BA8A1F62B04200F364CA /* Golden.png */; };
+		A0A3BA8D1F62B16300F364CA /* DarkBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = A0A3BA8C1F62B16300F364CA /* DarkBlue.png */; };
+		A0A3BA8F1F62B97500F364CA /* Matel.png in Resources */ = {isa = PBXBuildFile; fileRef = A0A3BA8E1F62B97500F364CA /* Matel.png */; };
+		A0A3BA911F62BC6700F364CA /* Pink.png in Resources */ = {isa = PBXBuildFile; fileRef = A0A3BA901F62BC6700F364CA /* Pink.png */; };
 		FA59DD521F5A517900EC1A86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59DD511F5A517900EC1A86 /* main.m */; };
 		FA59DD551F5A517900EC1A86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59DD541F5A517900EC1A86 /* AppDelegate.m */; };
 		FA59DD581F5A517900EC1A86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA59DD571F5A517900EC1A86 /* ViewController.m */; };
@@ -52,6 +58,14 @@
 		A04BB0DA1F5E49320042718F /* ColorControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorControlView.m; path = "Art font Demo/View/ColorControlView.m"; sourceTree = "<group>"; };
 		A04BB0DD1F5E50450042718F /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = "Art font Demo/ViewController/BaseViewController.h"; sourceTree = "<group>"; };
 		A04BB0DE1F5E50450042718F /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = "Art font Demo/ViewController/BaseViewController.m"; sourceTree = "<group>"; };
+		A0A3BA821F62A79500F364CA /* CBJMateriaLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBJMateriaLabel.h; path = ArtLabel/CBJMateriaLabel.h; sourceTree = "<group>"; };
+		A0A3BA831F62A79500F364CA /* CBJMateriaLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBJMateriaLabel.m; path = ArtLabel/CBJMateriaLabel.m; sourceTree = "<group>"; };
+		A0A3BA851F62A80700F364CA /* MateriaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MateriaViewController.h; path = "Art font Demo/ViewController/MateriaViewController.h"; sourceTree = "<group>"; };
+		A0A3BA861F62A80700F364CA /* MateriaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MateriaViewController.m; path = "Art font Demo/ViewController/MateriaViewController.m"; sourceTree = "<group>"; };
+		A0A3BA8A1F62B04200F364CA /* Golden.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Golden.png; path = ArtLabel/Golden.png; sourceTree = "<group>"; };
+		A0A3BA8C1F62B16300F364CA /* DarkBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DarkBlue.png; path = ArtLabel/DarkBlue.png; sourceTree = "<group>"; };
+		A0A3BA8E1F62B97500F364CA /* Matel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Matel.png; path = ArtLabel/Matel.png; sourceTree = "<group>"; };
+		A0A3BA901F62BC6700F364CA /* Pink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Pink.png; path = ArtLabel/Pink.png; sourceTree = "<group>"; };
 		FA59DD4D1F5A517900EC1A86 /* Art font Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Art font Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA59DD511F5A517900EC1A86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FA59DD531F5A517900EC1A86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -185,6 +199,12 @@
 				A03E00241F5FA408004E659A /* brush@2x.png */,
 				A04BB0A51F5E42EF0042718F /* CBJGlitchLabel.h */,
 				A04BB0A61F5E42EF0042718F /* CBJGlitchLabel.m */,
+				A0A3BA821F62A79500F364CA /* CBJMateriaLabel.h */,
+				A0A3BA831F62A79500F364CA /* CBJMateriaLabel.m */,
+				A0A3BA8A1F62B04200F364CA /* Golden.png */,
+				A0A3BA8C1F62B16300F364CA /* DarkBlue.png */,
+				A0A3BA8E1F62B97500F364CA /* Matel.png */,
+				A0A3BA901F62BC6700F364CA /* Pink.png */,
 			);
 			name = ArtLabel;
 			sourceTree = "<group>";
@@ -207,6 +227,8 @@
 				FA59DD8B1F5A776400EC1A86 /* MarkedLabelViewController.m */,
 				A03E00281F5FD8D6004E659A /* GlitchLabelViewController.h */,
 				A03E00291F5FD8D6004E659A /* GlitchLabelViewController.m */,
+				A0A3BA851F62A80700F364CA /* MateriaViewController.h */,
+				A0A3BA861F62A80700F364CA /* MateriaViewController.m */,
 				A04BB0DD1F5E50450042718F /* BaseViewController.h */,
 				A04BB0DE1F5E50450042718F /* BaseViewController.m */,
 			);
@@ -244,7 +266,6 @@
 				TargetAttributes = {
 					FA59DD4C1F5A517900EC1A86 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 484X4RMS42;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -275,6 +296,10 @@
 				A04BB0D61F5E46A30042718F /* circle@2x.png in Resources */,
 				A04BB0D81F5E46A30042718F /* strip@2x.png in Resources */,
 				FA59DD601F5A517900EC1A86 /* LaunchScreen.storyboard in Resources */,
+				A0A3BA8D1F62B16300F364CA /* DarkBlue.png in Resources */,
+				A0A3BA8B1F62B04200F364CA /* Golden.png in Resources */,
+				A0A3BA911F62BC6700F364CA /* Pink.png in Resources */,
+				A0A3BA8F1F62B97500F364CA /* Matel.png in Resources */,
 				FA59DD5D1F5A517900EC1A86 /* Assets.xcassets in Resources */,
 				A03E00251F5FA408004E659A /* brush@2x.png in Resources */,
 				FA59DD5B1F5A517900EC1A86 /* Main.storyboard in Resources */,
@@ -289,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0A3BA841F62A79500F364CA /* CBJMateriaLabel.m in Sources */,
 				FA59DD8C1F5A776400EC1A86 /* MarkedLabelViewController.m in Sources */,
 				A04BB0DF1F5E50450042718F /* BaseViewController.m in Sources */,
 				FA59DD861F5A771600EC1A86 /* HollowLabelViewController.m in Sources */,
@@ -304,6 +330,7 @@
 				FA59DD831F5A770800EC1A86 /* GradientLabelViewController.m in Sources */,
 				FA59DD7D1F5A76CF00EC1A86 /* CBJMarkedLabel.m in Sources */,
 				FA59DD521F5A517900EC1A86 /* main.m in Sources */,
+				A0A3BA871F62A80700F364CA /* MateriaViewController.m in Sources */,
 				FA59DD711F5A754600EC1A86 /* CBJGlowLabel.m in Sources */,
 				FA59DD7A1F5A762B00EC1A86 /* CBJ3DLabel.m in Sources */,
 				A04BB0A71F5E42EF0042718F /* CBJGlitchLabel.m in Sources */,
@@ -431,10 +458,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 484X4RMS42;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Art font Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "chaobaji.Art-font-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "Art-font-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -443,10 +470,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 484X4RMS42;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Art font Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "chaobaji.Art-font-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "Art-font-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

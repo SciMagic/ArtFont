@@ -172,7 +172,7 @@
     
     NSMutableArray *rects = [NSMutableArray array];
     
-    NSUInteger tryStep = 50;
+    NSUInteger tryStep = 25;
     for (NSUInteger i = 0; i < tryStep; i++) {
         
         CGFloat x = (((CGFloat) rand() / RAND_MAX) * CGRectGetWidth(rect));

@@ -92,6 +92,7 @@
     
     if (!self.sliceRects) {
         
+        CGImageRelease(contentImage); contentImage = NULL;
         return;
         
     }
